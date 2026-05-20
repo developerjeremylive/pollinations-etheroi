@@ -15,6 +15,7 @@ import { customerRoutes } from "./routes/customer.ts";
 import { deviceRoutes } from "./routes/device.ts";
 import { createDocsRoutes } from "./routes/docs.ts";
 import { modelStatsRoutes } from "./routes/model-stats.ts";
+import { questsRoutes } from "./routes/quests.ts";
 import { stripeRoutes } from "./routes/stripe.ts";
 import { stripeWebhooksRoutes } from "./routes/stripe-webhooks.ts";
 import { tiersRoutes } from "./routes/tiers.ts";
@@ -34,7 +35,8 @@ export const api = new Hono<Env>()
     .route("/device", deviceRoutes)
     .route("/webhooks", stripeWebhooksRoutes)
     .route("/admin", adminRoutes)
-    .route("/model-stats", modelStatsRoutes);
+    .route("/model-stats", modelStatsRoutes)
+    .route("/quests", questsRoutes);
 
 export type ApiRoutes = typeof api;
 

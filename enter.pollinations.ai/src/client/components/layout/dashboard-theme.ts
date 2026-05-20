@@ -20,7 +20,8 @@ export type DashboardPage =
     | "pollen"
     | "activity"
     | "keys"
-    | "models";
+    | "models"
+    | "quests";
 
 export type DashboardTheme =
     | "amber"
@@ -39,6 +40,7 @@ export const DASHBOARD_NAV_ITEMS: {
     { id: "news-faq", label: "News & FAQ", theme: "violet" },
     { id: "models", label: "Models", theme: "teal" },
     { id: "keys", label: "Keys", theme: "blue" },
+    { id: "quests", label: "Quests", theme: "green" },
     { id: "pollen", label: "Pollen", theme: "amber" },
     { id: "activity", label: "Activity", theme: "pink" },
 ];
@@ -47,6 +49,7 @@ export const DASHBOARD_PAGES: DashboardPage[] = [
     "news-faq",
     "models",
     "keys",
+    "quests",
     "pollen",
     "activity",
 ];
